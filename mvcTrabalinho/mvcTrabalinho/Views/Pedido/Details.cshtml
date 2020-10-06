@@ -1,0 +1,57 @@
+﻿@model mvcTrabalinho.Models.PedidoModel
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2 class="text-center text-primary">Detalhes do Pedido</h2>
+
+<div>
+    <h4></h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Nome)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nome)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Cpf)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Cpf)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Cep)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Cep)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.endereco)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.endereco)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ProdutoID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ProdutoID)
+        </dd>
+
+    </dl>
+</div>
+<p> 
+    @Html.ActionLink("Voltar", "Index")
+</p>
